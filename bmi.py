@@ -21,7 +21,7 @@ conn.commit()
 def calculate_bmi():
     try:
         weight = float(entry_weight.get())
-        height = float(entry_height.get()) / 100  # Convert height to meters
+        height = float(entry_height.get()) / 100
         bmi = weight / (height ** 2)
         entry_bmi.delete(0, tk.END)
         entry_bmi.insert(0, f"{bmi:.2f}")
